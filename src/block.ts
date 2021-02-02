@@ -13,14 +13,6 @@ class Block {
     this.data = data;
     this.hash = hash;
   }
-
-  public isValidStructure() : boolean {
-    return typeof this.index === 'number'
-      && typeof this.hash === 'string'
-      && typeof this.previousHash === 'string'
-      && typeof this.timestamp === 'number'
-      && typeof this.data === 'string';
-  }
 }
 
 export default Block;

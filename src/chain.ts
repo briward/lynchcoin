@@ -73,10 +73,6 @@ class Chain {
    * @returns {boolean} A boolean indicating the validation. 
    */
   public isBlockValid(block: Block): boolean {
-    if (!block.isValidStructure()) {
-      return false;
-    }
-  
     if (this.getLatestBlock().index + 1 !== block.index) {
       return false;
     }
